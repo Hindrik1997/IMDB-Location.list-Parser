@@ -2,7 +2,7 @@ package com.hindrik;
 
 import java.util.Objects;
 
-public class Movie {
+class Movie {
 
     private String _title = "null";
     private String _yearOfRelease = "null";

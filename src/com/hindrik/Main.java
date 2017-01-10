@@ -14,12 +14,12 @@ import java.util.List;
 import java.util.Objects;
 import java.util.stream.Stream;
 
-public class Main {
+class Main {
 
     private static BufferedWriter seriesOutput = null;
     private static BufferedWriter moviesOutput = null;
-    private static List<PatternSet> seriePatterns = new ArrayList<>();
-    private static List<PatternSet> moviePatterns = new ArrayList<>();
+    final private static List<PatternSet> seriePatterns = new ArrayList<>();
+    final private static List<PatternSet> moviePatterns = new ArrayList<>();
     private static boolean display = false;
 
     public static void main(String[] args) {
@@ -85,12 +85,12 @@ public class Main {
         moviePatterns.add(new MoviePattern());
     }
 
-    static void processLocation(String string) {
+    private static void processLocation(String string) {
         process(string, seriePatterns, seriesOutput);
         process(string, moviePatterns, moviesOutput);
     }
 
-    static void process(String string, List<PatternSet> patternSet, BufferedWriter output)
+    private static void process(String string, List<PatternSet> patternSet, BufferedWriter output)
     {
         for(PatternSet pattern : patternSet)
         {

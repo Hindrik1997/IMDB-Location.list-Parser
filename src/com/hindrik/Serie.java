@@ -2,7 +2,7 @@ package com.hindrik;
 
 import java.util.Objects;
 
-public class Serie {
+class Serie {
 
     private String _title = "null";
     private String _yearOfRelease = "null";
