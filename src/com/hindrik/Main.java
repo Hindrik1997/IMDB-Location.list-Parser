@@ -60,7 +60,7 @@ class Main {
         }
 
         try {
-            moviesOutput.write("Title|Year of release|Medium|State|Location");
+            moviesOutput.write("Title|Year of release|Quarter|Medium|State|Location");
         } catch (IOException e) {
             e.printStackTrace();
         }
